@@ -1,3 +1,4 @@
 name is {{name}}
-<input type="text" [(ngModel)]="name">
-<app-toggle [(check)]="isCheck"></app-toggle>
+<input #inputE type="text" [(ngModel)]="name">
+<app-toggle #toggleE [(check)]="isCheck"></app-toggle>
+<button (click)="toggleE.handleToggle()">click</button>
